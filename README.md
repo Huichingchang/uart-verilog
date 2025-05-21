@@ -52,16 +52,14 @@ Below is an example of an 8-bit instruction set for an integrated ALU controller
 ## 📂 Project Structure
 
 ```plaintext
-UART_Project/
-├── src/                    ← Verilog RTL source files
-│   ├── uart_tx.v
-│   ├── uart_rx.v
-│   ├── uart_top.v
-│   └── baud_gen.v
-├── sim/                    ← Simulation testbench & output
-│   ├── uart_top_tb.v
-│   └── wave_uart_top_tb.png
-├── RTL_uart_top.png        ← RTL block diagram
+uart-verilog/
+├── baud_gen.v             ← Baud rate generator
+├── uart_rx.v              ← UART receiver (RX)
+├── uart_tx.v              ← UART transmitter (TX)
+├── uart_top.v             ← Integration module (TX + RX)
+├── uart_top_tb.v          ← Testbench for full TX→RX path
+├── RTL_uart_top.png       ← RTL block diagram
+├── wave_uart_top_tb.png   ← ModelSim waveform output
 └── README.md
 
 ▶️ Simulation (ModelSim)
