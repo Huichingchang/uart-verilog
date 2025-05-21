@@ -62,7 +62,7 @@ UART_Project/
 │   ├── uart_top_tb.v
 │   └── wave_uart_top_tb.png
 ├── RTL_uart_top.png        ← RTL block diagram
-├── README.md
+└── README.md
 
 ▶️ Simulation (ModelSim)
 💡 SIM Mode
